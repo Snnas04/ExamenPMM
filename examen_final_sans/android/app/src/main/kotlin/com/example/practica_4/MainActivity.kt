@@ -1,4 +1,4 @@
-package com.example.examen_final_sans
+package com.example.practica_4
 
 import io.flutter.embedding.android.FlutterActivity
 

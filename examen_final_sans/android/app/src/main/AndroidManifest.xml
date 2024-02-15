@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="examen_final_sans"
+        android:label="practica_4"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -29,5 +29,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfK53CYFOmc3CR5gE5unse58s1b31043w"/>
     </application>
 </manifest>
