@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import 'screen/abres_screen.dart';
 import 'screen/home_screen.dart';
 import 'screen/map_screen.dart';
 
@@ -14,11 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Examen Final',
-      initialRoute: 'home',
+      title: 'Examen',
+      initialRoute: '/',
       routes: {
-        'home': (_) => HomeScreen(),
-        'mapa': (_) => MapScreen(),
-      });
+        '/': (context) => HomeScreen(),
+        '/mapa': (context) => MapScreen(),
+        '/arbres': (context) => const ArbresScreen(),  // Nueva ruta añadida aquí
+      },
+    );
   }
 }
