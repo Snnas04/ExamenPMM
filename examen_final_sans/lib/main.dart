@@ -11,6 +11,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   final location = const LatLng(0, 0);
 
+  // Definim les rutes de la nostra aplicació i indicam la pantalla inicial
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

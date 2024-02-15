@@ -20,6 +20,7 @@ class _ArbresScreenState extends State<ArbresScreen> {
     fetchData();
   }
 
+  // Solicitud de dades a la API
   void fetchData() async {
     final response = await http.get(Uri.parse('https://examen-practic-sim-default-rtdb.europe-west1.firebasedatabase.app/arbres.json'));
     if (response.statusCode == 200) {
@@ -32,6 +33,8 @@ class _ArbresScreenState extends State<ArbresScreen> {
     }
   }
 
+  // Mostram el contingut de la API en forma de llista
+  // si l'usuari fa clic en un element de la llista, es mostrarà la pantalla de detall d'aquest element
   @override
   Widget build(BuildContext context) {
     return Scaffold(

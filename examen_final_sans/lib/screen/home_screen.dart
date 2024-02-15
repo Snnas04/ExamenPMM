@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  // Pantalla inicial amb dos botons per accedir a les altres pantalles
   @override
   Widget build(BuildContext context) {
     return Scaffold(

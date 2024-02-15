@@ -8,6 +8,7 @@ class InfoAbres extends StatelessWidget {
 
   final detall = 'https://examen-practic-sim-default-rtdb.europe-west1.firebasedatabase.app/arbres.json';
 
+    // obrir la url al navegador
     void _launchURL() async {
     if (await canLaunch(detall)) {
       await launch(detall);
@@ -29,7 +30,7 @@ class InfoAbres extends StatelessWidget {
             Text('Tipus: ${abre['tipus']}'),
             Text('Autocton: ${abre['autocton'] ? 'Si' : 'No'}'),
             Image.network(abre['foto']),
-            Text('Detall: ${abre['detall']}'),
+            Text('Detall: ${abre['detall']}'), // Comentat per evitar errors
             // InkWell(
             //   child: Text('Detall: $detall'),
             //   onTap: _launchURL,
